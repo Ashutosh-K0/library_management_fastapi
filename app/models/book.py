@@ -15,3 +15,4 @@ class Book(Base):
 
     author = relationship('Author', back_populates='books')
     category = relationship('Category', back_populates='books')
+    borrow_records = relationship('BorrowRecord', back_populates='book')
