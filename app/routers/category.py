@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from dependencies import get_db
+from app.dependencies import get_db
 from sqlalchemy.orm import Session
 from app.models.category import Category
 from app.schemas.category import CategoryCreate, CategoryResponse
 
-router = APIRouter(prefix='Categories', tags =['Categories'])
+router = APIRouter(prefix='/Categories', tags =['Categories'])
 
 # CREATE Category(POST HTTP Method): API Endpoint
 @router.post("/", response_model=CategoryResponse)
