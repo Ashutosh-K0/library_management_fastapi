@@ -67,6 +67,8 @@ library_management_fastapi/
 │   ├── schemas/
 │   ├── routers/
 │   ├── database.py
+│   ├── dependencies.py
+│   ├── test_connection.py
 │   └── main.py
 │
 ├── .env.example
